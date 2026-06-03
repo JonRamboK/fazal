@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern professional portfolio website showcasing projects and skills">
+    <meta name="author" content="Your Name">
+    <title>Your Portfolio | Web Developer & Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-symbol">◆</span>
+                <span class="logo-text">Fazal</span>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-scroll>Home</a></li>
+                <li><a href="#about" class="nav-link" data-scroll>About</a></li>
+                <li><a href="#skills" class="nav-link" data-scroll>Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-scroll>Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-scroll>Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text-wrapper">
+                <div class="hero-greeting fade-in">Hello, I'm</div>
+                <h1 class="hero-name fade-in-delayed-1">Fazal Ul Rehman Mangi</h1>
+                <p class="hero-title fade-in-delayed-2">Multi-Skilled IT & Technology Professional</p>
+                <p class="hero-description fade-in-delayed-3">
+                    I am a versatile technology professional with expertise in Full-Stack Development, UI/UX Design,
+                     Microsoft Word & Excel, Computer Networking, Solar System Technology, and Computer System Maintenance.
+                      I specialize in creating modern web applications, designing user-friendly interfaces, managing data efficiently, 
+                      configuring networks, installing and troubleshooting computer systems, and providing solar energy solutions. 
+                      My goal is to deliver innovative, reliable, and efficient technology services that help businesses and individuals achieve their objectives.
+                </p>
+                <div class="hero-cta fade-in-delayed-4">
+                    <a href="#contact" class="btn btn-primary" data-scroll>Get in Touch</a>
+                    <a href="#projects" class="btn btn-secondary" data-scroll>View Work</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper fade-in-delayed-5">
+                <div class="profile-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 200 200" xmlns="./Picture/ChatGPT Image Feb 13, 2026, 10_50_03 AM.png">
+                            <img src="./Picture/ChatGPT Image Feb 13, 2026, 10_50_03 AM.png" height="150%"  alt="">
+                            <circle cx="100" cy="80" r="40" fill="currentColor" opacity="0.3"/>
+                            <ellipse cx="100" cy="140" rx="50" ry="45" fill="currentColor" opacity="0.2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="floating-card card-1">
+                    <div class="card-icon">💻</div>
+                    <div class="card-text">Web Dev</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">🎨</div>
+                    <div class="card-text">Design</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-text">Fast</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I am a passionate and multi-skilled technology professional with expertise
+                         in Full-Stack Development, UI/UX Design, Microsoft Word & Excel,
+                          Computer Networking, Solar Technology, and Computer System 
+                          Maintenance.
+                    </p>
+                    <p>
+                        I enjoy building modern, responsive websites, creating intuitive user experiences,
+                         managing and analyzing data, configuring secure networks, troubleshooting computer
+                          systems, and implementing efficient solar energy solutions.
+                    </p>
+                    <p>
+                        With a strong focus on quality, innovation, and problem-solving,
+                         I am committed to delivering reliable and effective technology solutions that meet client and business needs.
+                    </p>
+                </div>
+
+                <div class="about-info reveal">
+                    <div class="info-item">
+                        <span class="info-label">Location</span>
+                        <span class="info-value">Mushraf Colony Near Hawksbay road, Karachi Pakistan</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Experience</span>
+                        <span class="info-value">3+ Years</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Focus</span>
+                        <span class="info-value">Problem Solving & Digital Innovation</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email</span>
+                        <span class="info-value"><a href="fazalurrehmanmangi@gmail.com">fazalurrehmanmangi@gmail.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-card reveal">
+                    <h3 class="skill-category">Frontend Development</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">React & Vue</span>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML & CSS</span>
+                            <span class="skill-level">98%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 98%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-card reveal">
+                    <h3 class="skill-category">Backend Development</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Node.js & Express</span>
+                            <span class="skill-level">88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 88%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">MongoDB & SQL</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">REST APIs</span>
+                            <span class="skill-level">94%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 94%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python & Django</span>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others 1 -->
+                <div class="skill-card reveal">
+                    <h3 class="skill-category">Tools & Design</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-level">96%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 96%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Figma Design</span>
+                            <span class="skill-level">89%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 89%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Docker & AWS</span>
+                            <span class="skill-level">82%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 82%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-level">87%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others 2 -->
+                <div class="skill-card reveal">
+                    <h3 class="skill-category">Computer Hardware Maintenance</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Motherboard Installation</span>
+                            <span class="skill-level">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">CPU Installation & Upgrades</span>
+                            <span class="skill-level">89%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 89%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Printer Installation & Troubleshooting</span>
+                            <span class="skill-level">82%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 82%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Troubleshooting & Technical Support</span>
+                            <span class="skill-level">87%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others 3 -->
+                <div class="skill-card reveal">
+                    <h3 class="skill-category">Solar System Installation</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Solar Panel Installation</span>
+                            <span class="skill-level">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Battery Installation</span>
+                            <span class="skill-level">93%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 93%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Solar Panel Cleaning & Inspection</span>
+                            <span class="skill-level">98%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 98%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Energy Load Calculation</span>
+                            <span class="skill-level">87%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others 4 -->
+                <div class="skill-card reveal">
+                    <h3 class="skill-category">Microsoft Office Specialist</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Data Entry</span>
+                            <span class="skill-level">96%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 96%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Professional Formatting</span>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">PDF Conversion & Export</span>
+                            <span class="skill-level">92%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 92%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Cover Letter Creation</span>
+                            <span class="skill-level">87%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <img src="./Picture/kids clothing store.PNG" height="140%" alt="">
+                                <rect width="400" height="250" fill="currentColor" opacity="0.1"/>
+                                <circle cx="100" cy="80" r="30" fill="currentColor" opacity="0.2"/>
+                                <rect x="150" y="60" width="200" height="40" fill="currentColor" opacity="0.15"/>
+                                <rect x="150" y="120" width="150" height="20" fill="currentColor" opacity="0.1"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Kids' Clothing Store </h3>
+                        <p class="project-description">
+                            Discover stylish, comfortable, and high-quality clothing for kids of all ages.
+                             Our collection features trendy outfits, everyday essentials, school wear, party dresses,
+                              and seasonal fashion designed to keep children looking great while feeling comfortable.
+                               We focus on premium fabrics, modern designs, and affordable prices to bring parents the
+                                best shopping experience for their little ones. 👕👗🧒✨
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://jonrambok.github.io/Najiha/Home.html" class="project-link" target="_blank" rel="noopener">View Project</a>
+                            <a href="https://jonrambok.github.io/Najiha/Home.html" class="project-link" target="_blank" rel="noopener">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <img src="./Picture/Task Management App.jfif" height="180%" alt="">
+                                <rect width="400" height="250" fill="currentColor" opacity="0.1"/>
+                                <circle cx="200" cy="125" r="50" fill="currentColor" opacity="0.2"/>
+                                <path d="M 150 175 Q 200 150 250 175" stroke="currentColor" stroke-width="3" fill="none" opacity="0.15"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            Collaborative task management application with real-time updates using WebSocket. 
+                            Includes team collaboration, file sharing, and smart notifications.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Vue 3</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">View Project</a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <img src="./Picture/Computer Hardware.jfif" height="180%" alt="">
+                                <rect width="400" height="250" fill="currentColor" opacity="0.1"/>
+                                <rect x="50" y="50" width="70" height="70" fill="currentColor" opacity="0.2"/>
+                                <rect x="160" y="50" width="70" height="70" fill="currentColor" opacity="0.15"/>
+                                <rect x="270" y="50" width="70" height="70" fill="currentColor" opacity="0.1"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Computer Hardware Maintenance</h3>
+                        <p class="project-description">
+                            Computer Hardware Maintenance involves the installation, repair,
+                             upgrading, and troubleshooting of computer physical components to 
+                             ensure smooth and efficient system performance. It includes working
+                              with internal and external hardware parts such as the motherboard, 
+                              CPU, RAM, storage devices, power supply, and peripherals. The main goal
+                               is to keep computer systems running properly by identifying faults, replacing
+                                damaged components, performing regular cleaning, and optimizing hardware 
+                                performance for long-lasting and reliable operation.
+                        </p>
+                        <div class="project-tags">
+                            <!-- <span class="tag">Next.js</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">Vercel</span> -->
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">View Project</a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <img src="./Picture/Analytics Dashboard.jfif" height="180%" alt="">
+                                <rect width="400" height="250" fill="currentColor" opacity="0.1"/>
+                                <line x1="50" y1="80" x2="350" y2="80" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+                                <line x1="50" y1="125" x2="350" y2="125" stroke="currentColor" stroke-width="2" opacity="0.15"/>
+                                <line x1="50" y1="170" x2="350" y2="170" stroke="currentColor" stroke-width="2" opacity="0.1"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Real-time analytics dashboard for tracking user behavior and metrics. Features interactive 
+                            charts, custom reports, and data export functionality.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">View Project</a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Let's Work Together</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-text reveal">
+                    <p>
+                        I'm always interested in hearing about new projects and opportunities. 
+                        Feel free to reach out if you'd like to discuss how I can help bring your ideas to life.
+                    </p>
+                </div>
+
+                <div class="contact-methods">
+                    <!-- Email -->
+                    <div class="contact-card reveal">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <a href="fazalurrehmanmangi@gmail.com" class="contact-link">fazalurrehmanmangi@gmail.com</a>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-card reveal">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <a href="https://wa.me/923012292471" target="_blank class="contact-link">+92 301 2292471</a>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="contact-card reveal">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p class="contact-text-item">Mushraf colony near Hawksbay road Karachi, Pakistan</p>
+                    </div>
+                </div>
+
+                <div class="social-links reveal">
+                    <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter">
+                        <span>𝕏</span>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener" class="social-link" title="GitHub">
+                        <span>⚙️</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+                        <span>💼</span>
+                    </a>
+                    <a href="https://www.facebook.com/share/1EEJEyQXES/" target="_blank" rel="noopener" class="social-link" title="Instagram">
+                        <span>📷</span>
+                    </a>
+                </div>
+
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Fazal. All rights reserved.</p>
+                <p>We create modern, responsive & user-friendly websites.
+                    Built with passion for<span class="heart">♥</span> technology & innovation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
