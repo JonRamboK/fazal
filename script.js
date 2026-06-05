@@ -411,14 +411,19 @@ skillBars.forEach(bar => {
 // ===================================
 
 const projectCards = document.querySelectorAll('.project-card');
+const isTouchDevice = () => window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 
 projectCards.forEach(card => {
     card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-15px) scale(1.02)';
+        if (!isTouchDevice()) {
+            card.style.transform = 'translateY(-15px) scale(1.02)';
+        }
     });
     
     card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0) scale(1)';
+        if (!isTouchDevice()) {
+            card.style.transform = 'translateY(0) scale(1)';
+        }
     });
 });
 
@@ -448,6 +453,11 @@ function debounce(func, wait) {
 // Handle window resize
 const handleResize = debounce(() => {
     updateActiveNav();
+    // Close mobile menu if screen becomes wide enough
+    if (window.innerWidth > 768) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
 }, 250);
 
 window.addEventListener('resize', handleResize);
