@@ -1,663 +1,1008 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
-    <meta name="theme-color" content="#6366f1">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="description" content="Modern professional portfolio website showcasing projects and skills">
-    <meta name="author" content="Your Name">
-    <title>Fazal | Web Developer & Designer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="">
- 
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#00d4aa" />
+  <meta name="description" content="Fazal Ul Rehman Mangi — Front-End Developer & Technical Specialist. Web development, computer hardware, solar installation, and Microsoft Office services in Karachi, Pakistan." />
+  <meta name="keywords" content="web developer karachi, front-end developer pakistan, solar installation, computer hardware, microsoft office specialist" />
+  <meta name="author" content="Fazal Ul Rehman Mangi" />
+  <meta property="og:title" content="Fazal | Front-End Developer & Technical Specialist" />
+  <meta property="og:description" content="Multi-skilled technical professional offering web development, hardware maintenance, solar installation & MS Office services." />
+  <meta property="og:type" content="website" />
+  <title>Fazal | Front-End Developer & Technical Specialist</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-symbol">◆</span>
-                <span class="logo-text">Fazal</span>
-            </div>
-            
-            <button class="menu-toggle" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
 
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link" data-scroll>Home</a></li>
-                <li><a href="#about" class="nav-link" data-scroll>About</a></li>
-                <li><a href="#skills" class="nav-link" data-scroll>Skills</a></li>
-                <li><a href="#projects" class="nav-link" data-scroll>Projects</a></li>
-                <li><a href="#contact" class="nav-link" data-scroll>Contact</a></li>
+  <!-- ========== LOADER ========== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">F</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand" data-scroll>
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">Fazal</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-a active" data-scroll>Home</a></li>
+        <li><a href="#about" class="nav-a" data-scroll>About</a></li>
+        <li><a href="#skills" class="nav-a" data-scroll>Skills</a></li>
+        <li><a href="#services" class="nav-a" data-scroll>Services</a></li>
+        <li><a href="#projects" class="nav-a" data-scroll>Projects</a></li>
+        <li><a href="#experience" class="nav-a" data-scroll>Experience</a></li>
+        <li><a href="#contact" class="nav-a" data-scroll>Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="hero-badge reveal-up" style="--d:0.1s">
+          <span class="badge-dot"></span>
+          Available for Freelance &amp; Projects
+        </div>
+
+        <h1 class="hero-name reveal-up" style="--d:0.25s">
+          Fazal Ul<br/>
+          <span class="name-accent">Rehman</span> Mangi
+        </h1>
+
+        <p class="hero-role reveal-up" style="--d:0.4s">
+          Front-End Developer &amp; Technical Specialist
+        </p>
+
+        <p class="hero-desc reveal-up" style="--d:0.55s">
+          Helping businesses and individuals with web development, computer hardware solutions, solar installations, and Microsoft Office services.
+        </p>
+
+        <div class="hero-btns reveal-up" style="--d:0.7s">
+          <a href="#contact" class="btn btn-primary" data-scroll>
+            <span>Hire Me</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#projects" class="btn btn-ghost" data-scroll>View Portfolio</a>
+          <a href="https://wa.me/923012292471" class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.28 7.051L.785 23.216a.5.5 0 00.614.614l4.165-1.495A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.003-1.366l-.36-.213-3.715 1.334 1.334-3.715-.213-.36A9.818 9.818 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182S21.818 6.573 21.818 12 17.427 21.818 12 21.818z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-stats reveal-up" style="--d:0.85s">
+          <div class="stat">
+            <span class="stat-num counter" data-target="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="50">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="30">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="4">0</span>
+            <span class="stat-label">Skill Domains</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right" style="--d:0.3s">
+        <div class="avatar-ring">
+          <div class="avatar-img">
+            <div class="avatar-placeholder">
+              <svg viewBox="0 0 120 120" fill="none">
+                <circle cx="60" cy="42" r="26" fill="rgba(0,212,170,0.18)" stroke="rgba(0,212,170,0.4)" stroke-width="2"/>
+                <ellipse cx="60" cy="98" rx="38" ry="28" fill="rgba(0,212,170,0.1)" stroke="rgba(0,212,170,0.25)" stroke-width="2"/>
+                <text x="60" y="50" text-anchor="middle" font-size="32" fill="rgba(0,212,170,0.7)" font-family="Syne">F</text>
+              </svg>
+            </div>
+          </div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+        </div>
+
+        <div class="float-chip chip-a">
+          <span class="chip-icon">💻</span>
+          <span>Web Dev</span>
+        </div>
+        <div class="float-chip chip-b">
+          <span class="chip-icon">🔧</span>
+          <span>Hardware</span>
+        </div>
+        <div class="float-chip chip-c">
+          <span class="chip-icon">☀️</span>
+          <span>Solar</span>
+        </div>
+        <div class="float-chip chip-d">
+          <span class="chip-icon">📊</span>
+          <span>MS Office</span>
+        </div>
+
+        <div class="tech-tags">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span><span>Git</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">Who I Am</span>
+        <h2 class="sec-title">About <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass reveal-left">
+          <div class="about-avatar">
+            <svg viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="35" r="22" fill="rgba(0,212,170,0.12)" stroke="rgba(0,212,170,0.35)" stroke-width="1.5"/>
+              <ellipse cx="50" cy="82" rx="32" ry="22" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="1.5"/>
+              <text x="50" y="44" text-anchor="middle" font-size="26" fill="rgba(0,212,170,0.65)" font-family="Syne,sans-serif">F</text>
+            </svg>
+          </div>
+          <div class="about-info-list">
+            <div class="ai-row">
+              <span class="ai-label">Name</span>
+              <span class="ai-val">Fazal Ul Rehman Mangi</span>
+            </div>
+            <div class="ai-row">
+              <span class="ai-label">Location</span>
+              <span class="ai-val">Karachi, Pakistan</span>
+            </div>
+            <div class="ai-row">
+              <span class="ai-label">Experience</span>
+              <span class="ai-val">3+ Years</span>
+            </div>
+            <div class="ai-row">
+              <span class="ai-label">Focus</span>
+              <span class="ai-val">Problem Solving & Innovation</span>
+            </div>
+            <div class="ai-row">
+              <span class="ai-label">Email</span>
+              <span class="ai-val"><a href="mailto:fazalurrehmanmangi@gmail.com">fazalurrehmanmangi@gmail.com</a></span>
+            </div>
+            <div class="ai-row">
+              <span class="ai-label">Phone</span>
+              <span class="ai-val"><a href="https://wa.me/923012292471">+92 301 2292471</a></span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary w-full mt-md" data-scroll>Get in Touch</a>
+        </div>
+
+        <div class="about-text-block reveal-right">
+          <h3 class="about-sub">A Versatile Technology Professional</h3>
+          <p>I'm a passionate, multi-skilled technology professional with a deep commitment to delivering reliable, efficient, and innovative solutions. My expertise spans four distinct technical domains — each developed through real-world practice and hands-on problem-solving.</p>
+          <p>I enjoy building modern, responsive websites that combine aesthetics with performance. Whether it's repairing computer hardware, configuring solar energy systems, or creating polished Excel reports, I approach every task with the same professional mindset: <em>understand the problem, execute with precision, deliver beyond expectations.</em></p>
+          <p>My goal is to be the single trusted technical resource for businesses and individuals across Karachi and beyond — eliminating the need to hire multiple specialists for different technology challenges.</p>
+
+          <div class="about-pillars">
+            <div class="pillar">
+              <span class="pillar-icon">🎯</span>
+              <div>
+                <strong>Problem-Solving Mindset</strong>
+                <p>Every challenge is an opportunity to deliver smarter solutions.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">⚡</span>
+              <div>
+                <strong>Commitment to Quality</strong>
+                <p>I don't cut corners — every deliverable is built to last.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">🔄</span>
+              <div>
+                <strong>Fast Learning Ability</strong>
+                <p>Technology evolves fast. I stay ahead of the curve.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">What I Know</span>
+        <h2 class="sec-title">Technical <span class="accent">Skills</span></h2>
+      </div>
+
+      <div class="skills-tabs reveal-up" style="--d:0.1s">
+        <button class="stab active" data-tab="webdev">🌐 Web Dev</button>
+        <button class="stab" data-tab="hardware">🔧 Hardware</button>
+        <button class="stab" data-tab="solar">☀️ Solar</button>
+        <button class="stab" data-tab="office">📊 MS Office</button>
+      </div>
+
+      <div class="skills-panels">
+
+        <!-- Web Dev -->
+        <div class="skills-panel active" id="tab-webdev">
+          <div class="skills-grid">
+            <div class="skill-item reveal-up" style="--d:0.05s">
+              <div class="skill-header">
+                <span class="skill-icon">🌐</span>
+                <span class="skill-name">HTML5</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.1s">
+              <div class="skill-header">
+                <span class="skill-icon">🎨</span>
+                <span class="skill-name">CSS3 &amp; Responsive Design</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.15s">
+              <div class="skill-header">
+                <span class="skill-icon">⚙️</span>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.2s">
+              <div class="skill-header">
+                <span class="skill-icon">📱</span>
+                <span class="skill-name">Responsive Web Design</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.25s">
+              <div class="skill-header">
+                <span class="skill-icon">🐙</span>
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware -->
+        <div class="skills-panel" id="tab-hardware">
+          <div class="skills-grid">
+            <div class="skill-item reveal-up" style="--d:0.05s">
+              <div class="skill-header"><span class="skill-icon">🖥️</span><span class="skill-name">PC Troubleshooting</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.1s">
+              <div class="skill-header"><span class="skill-icon">🔩</span><span class="skill-name">Hardware Installation</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.15s">
+              <div class="skill-header"><span class="skill-icon">🛠️</span><span class="skill-name">System Maintenance</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.2s">
+              <div class="skill-header"><span class="skill-icon">💿</span><span class="skill-name">Software Installation</span><span class="skill-pct">92%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.25s">
+              <div class="skill-header"><span class="skill-icon">🌐</span><span class="skill-name">Network Basics</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solar -->
+        <div class="skills-panel" id="tab-solar">
+          <div class="skills-grid">
+            <div class="skill-item reveal-up" style="--d:0.05s">
+              <div class="skill-header"><span class="skill-icon">🔆</span><span class="skill-name">Solar Panel Installation</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.1s">
+              <div class="skill-header"><span class="skill-icon">⚡</span><span class="skill-name">Inverter Setup</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="82"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.15s">
+              <div class="skill-header"><span class="skill-icon">🔧</span><span class="skill-name">System Maintenance</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.2s">
+              <div class="skill-header"><span class="skill-icon">🛡️</span><span class="skill-name">Electrical Safety</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.25s">
+              <div class="skill-header"><span class="skill-icon">🏠</span><span class="skill-name">Residential Solar Solutions</span><span class="skill-pct">86%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="86"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Office -->
+        <div class="skills-panel" id="tab-office">
+          <div class="skills-grid">
+            <div class="skill-item reveal-up" style="--d:0.05s">
+              <div class="skill-header"><span class="skill-icon">📊</span><span class="skill-name">Microsoft Excel</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.1s">
+              <div class="skill-header"><span class="skill-icon">📝</span><span class="skill-name">Microsoft Word</span><span class="skill-pct">92%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.15s">
+              <div class="skill-header"><span class="skill-icon">⌨️</span><span class="skill-name">Data Entry</span><span class="skill-pct">95%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="95"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.2s">
+              <div class="skill-header"><span class="skill-icon">📋</span><span class="skill-name">Reports &amp; Documentation</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-item reveal-up" style="--d:0.25s">
+              <div class="skill-header"><span class="skill-icon">🗃️</span><span class="skill-name">Spreadsheet Management</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">What I Offer</span>
+        <h2 class="sec-title">My <span class="accent">Services</span></h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="svc-card glass reveal-up" style="--d:0.05s">
+          <div class="svc-icon-wrap">🌐</div>
+          <h3>Website Development</h3>
+          <p>Custom, responsive websites built with HTML5, CSS3 & JavaScript — fast, SEO-optimized, and mobile-first.</p>
+          <ul class="svc-list">
+            <li>Landing Pages</li>
+            <li>Portfolio Websites</li>
+            <li>Business Sites</li>
+          </ul>
+        </div>
+
+        <div class="svc-card glass reveal-up" style="--d:0.1s">
+          <div class="svc-icon-wrap">🖥️</div>
+          <h3>Computer Repair &amp; Maintenance</h3>
+          <p>Diagnose and fix any PC issue — hardware faults, slow systems, virus removal, and full system optimization.</p>
+          <ul class="svc-list">
+            <li>Hardware Installation</li>
+            <li>Software Setup</li>
+            <li>Network Configuration</li>
+          </ul>
+        </div>
+
+        <div class="svc-card glass reveal-up" style="--d:0.15s">
+          <div class="svc-icon-wrap">☀️</div>
+          <h3>Solar System Installation</h3>
+          <p>Complete residential solar solutions — from panel mounting and inverter setup to system testing and maintenance.</p>
+          <ul class="svc-list">
+            <li>Panel Installation</li>
+            <li>Inverter & Battery Setup</li>
+            <li>Solar Maintenance</li>
+          </ul>
+        </div>
+
+        <div class="svc-card glass reveal-up" style="--d:0.2s">
+          <div class="svc-icon-wrap">📊</div>
+          <h3>Microsoft Office Solutions</h3>
+          <p>Professional spreadsheets, formatted documents, and clean data entry — saving you time and ensuring accuracy.</p>
+          <ul class="svc-list">
+            <li>Excel Spreadsheets</li>
+            <li>Word Formatting</li>
+            <li>Data Entry Services</li>
+          </ul>
+        </div>
+
+        <div class="svc-card glass reveal-up" style="--d:0.25s">
+          <div class="svc-icon-wrap">📄</div>
+          <h3>Landing Pages</h3>
+          <p>High-converting, visually stunning landing pages designed to capture leads and showcase your brand effectively.</p>
+          <ul class="svc-list">
+            <li>Product Pages</li>
+            <li>Event Pages</li>
+            <li>Service Pages</li>
+          </ul>
+        </div>
+
+        <div class="svc-card glass reveal-up" style="--d:0.3s">
+          <div class="svc-icon-wrap">📁</div>
+          <h3>Portfolio Websites</h3>
+          <p>Beautiful personal portfolios that showcase your work, skills, and experience with modern design and smooth animations.</p>
+          <ul class="svc-list">
+            <li>Creative Portfolios</li>
+            <li>CV/Resume Sites</li>
+            <li>Agency Sites</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">My Work</span>
+        <h2 class="sec-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+
+      <div class="proj-filter reveal-up" style="--d:0.1s">
+        <button class="pfbtn active" data-filter="all">All</button>
+        <button class="pfbtn" data-filter="web">Web Dev</button>
+        <button class="pfbtn" data-filter="hardware">Hardware</button>
+        <button class="pfbtn" data-filter="solar">Solar</button>
+        <button class="pfbtn" data-filter="office">MS Office</button>
+      </div>
+
+      <div class="proj-grid">
+
+        <div class="proj-card glass reveal-up" style="--d:0.05s" data-cat="web">
+          <div class="proj-img proj-img-web">
+            <div class="proj-overlay">
+              <div class="proj-overlay-links">
+                <a href="#" class="proj-ol-btn" target="_blank">Live Demo</a>
+                <a href="https://github.com" class="proj-ol-btn outline" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <div class="proj-img-inner">
+              <svg viewBox="0 0 320 200" fill="none">
+                <rect width="320" height="200" rx="8" fill="rgba(0,212,170,0.05)"/>
+                <rect x="20" y="20" width="280" height="30" rx="4" fill="rgba(0,212,170,0.15)"/>
+                <rect x="20" y="62" width="180" height="12" rx="3" fill="rgba(0,212,170,0.1)"/>
+                <rect x="20" y="82" width="220" height="8" rx="2" fill="rgba(255,255,255,0.06)"/>
+                <rect x="20" y="98" width="200" height="8" rx="2" fill="rgba(255,255,255,0.04)"/>
+                <rect x="20" y="120" width="80" height="32" rx="4" fill="rgba(0,212,170,0.2)"/>
+                <rect x="110" y="120" width="80" height="32" rx="4" fill="rgba(255,255,255,0.06)"/>
+                <text x="60" y="142" text-anchor="middle" font-size="10" fill="rgba(0,212,170,0.8)" font-family="sans-serif">Hire Me</text>
+                <circle cx="270" cy="35" r="10" fill="rgba(0,212,170,0.3)"/>
+                <text x="270" y="39" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif">F</text>
+              </svg>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="ptag">HTML5</span><span class="ptag">CSS3</span><span class="ptag">JavaScript</span></div>
+            <h3>Personal Portfolio Website</h3>
+            <p>A fully responsive, modern portfolio website with smooth animations, dark theme, and glassmorphism effects.</p>
+            <div class="proj-links">
+              <a href="#" class="proj-link">View Project →</a>
+              <a href="https://github.com" class="proj-link muted">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card glass reveal-up" style="--d:0.1s" data-cat="web">
+          <div class="proj-img proj-img-land">
+            <div class="proj-overlay">
+              <div class="proj-overlay-links">
+                <a href="#" class="proj-ol-btn" target="_blank">Live Demo</a>
+                <a href="https://github.com" class="proj-ol-btn outline" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <div class="proj-img-inner">
+              <svg viewBox="0 0 320 200" fill="none">
+                <rect width="320" height="200" rx="8" fill="rgba(99,102,241,0.05)"/>
+                <rect x="0" y="0" width="320" height="60" rx="8" fill="rgba(99,102,241,0.12)"/>
+                <text x="160" y="36" text-anchor="middle" font-size="18" fill="rgba(99,102,241,0.8)" font-family="Syne,sans-serif" font-weight="700">Business Landing Page</text>
+                <rect x="40" y="80" width="240" height="8" rx="2" fill="rgba(255,255,255,0.06)"/>
+                <rect x="60" y="96" width="200" height="8" rx="2" fill="rgba(255,255,255,0.04)"/>
+                <rect x="110" y="118" width="100" height="28" rx="14" fill="rgba(99,102,241,0.25)"/>
+                <text x="160" y="137" text-anchor="middle" font-size="10" fill="rgba(99,102,241,0.9)" font-family="sans-serif">Get Started</text>
+                <rect x="20" y="160" width="80" height="24" rx="4" fill="rgba(255,255,255,0.05)"/>
+                <rect x="120" y="160" width="80" height="24" rx="4" fill="rgba(255,255,255,0.05)"/>
+                <rect x="220" y="160" width="80" height="24" rx="4" fill="rgba(255,255,255,0.05)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="ptag">HTML5</span><span class="ptag">CSS3</span><span class="ptag">Responsive</span></div>
+            <h3>Business Landing Page</h3>
+            <p>Clean, conversion-focused landing page for a local business with mobile-first design and contact form.</p>
+            <div class="proj-links">
+              <a href="#" class="proj-link">View Project →</a>
+              <a href="https://github.com" class="proj-link muted">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card glass reveal-up" style="--d:0.15s" data-cat="hardware">
+          <div class="proj-img proj-img-hw">
+            <div class="proj-overlay">
+              <div class="proj-overlay-links">
+                <a href="#" class="proj-ol-btn" target="_blank">View Details</a>
+              </div>
+            </div>
+            <div class="proj-img-inner">
+              <svg viewBox="0 0 320 200" fill="none">
+                <rect width="320" height="200" rx="8" fill="rgba(245,158,11,0.05)"/>
+                <rect x="60" y="40" width="200" height="120" rx="6" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+                <rect x="80" y="55" width="60" height="40" rx="3" fill="rgba(245,158,11,0.15)"/>
+                <rect x="155" y="55" width="40" height="18" rx="2" fill="rgba(245,158,11,0.1)"/>
+                <rect x="155" y="79" width="40" height="16" rx="2" fill="rgba(245,158,11,0.08)"/>
+                <rect x="80" y="105" width="110" height="8" rx="2" fill="rgba(245,158,11,0.1)"/>
+                <rect x="80" y="120" width="80" height="6" rx="2" fill="rgba(245,158,11,0.06)"/>
+                <text x="110" y="80" text-anchor="middle" font-size="18" fill="rgba(245,158,11,0.6)">🔩</text>
+              </svg>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="ptag hw">Motherboard</span><span class="ptag hw">RAM</span><span class="ptag hw">Storage</span></div>
+            <h3>Computer Hardware Maintenance</h3>
+            <p>Complete hardware overhaul: component replacement, thermal paste reapplication, RAM upgrade and system optimization.</p>
+            <div class="proj-links">
+              <a href="#" class="proj-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card glass reveal-up" style="--d:0.2s" data-cat="solar">
+          <div class="proj-img proj-img-solar">
+            <div class="proj-overlay">
+              <div class="proj-overlay-links">
+                <a href="#" class="proj-ol-btn" target="_blank">View Details</a>
+              </div>
+            </div>
+            <div class="proj-img-inner">
+              <svg viewBox="0 0 320 200" fill="none">
+                <rect width="320" height="200" rx="8" fill="rgba(251,191,36,0.05)"/>
+                <circle cx="160" cy="80" r="45" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.25)" stroke-width="1.5"/>
+                <circle cx="160" cy="80" r="30" fill="rgba(251,191,36,0.15)" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+                <text x="160" y="88" text-anchor="middle" font-size="28" fill="rgba(251,191,36,0.7)">☀️</text>
+                <rect x="20" y="150" width="60" height="30" rx="3" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+                <rect x="90" y="150" width="60" height="30" rx="3" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+                <rect x="160" y="150" width="60" height="30" rx="3" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+                <rect x="230" y="150" width="60" height="30" rx="3" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+              </svg>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="ptag solar">Panels</span><span class="ptag solar">Inverter</span><span class="ptag solar">Residential</span></div>
+            <h3>Residential Solar Installation</h3>
+            <p>3kW rooftop solar installation including panel mounting, inverter setup, battery configuration, and safety testing.</p>
+            <div class="proj-links">
+              <a href="#" class="proj-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card glass reveal-up" style="--d:0.25s" data-cat="office">
+          <div class="proj-img proj-img-excel">
+            <div class="proj-overlay">
+              <div class="proj-overlay-links">
+                <a href="#" class="proj-ol-btn" target="_blank">View Sample</a>
+              </div>
+            </div>
+            <div class="proj-img-inner">
+              <svg viewBox="0 0 320 200" fill="none">
+                <rect width="320" height="200" rx="8" fill="rgba(16,185,129,0.05)"/>
+                <rect x="20" y="20" width="280" height="24" rx="3" fill="rgba(16,185,129,0.15)"/>
+                <text x="30" y="37" font-size="10" fill="rgba(16,185,129,0.8)" font-family="JetBrains Mono,monospace">Name</text>
+                <text x="120" y="37" font-size="10" fill="rgba(16,185,129,0.8)" font-family="monospace">Jan</text>
+                <text x="180" y="37" font-size="10" fill="rgba(16,185,129,0.8)" font-family="monospace">Feb</text>
+                <text x="240" y="37" font-size="10" fill="rgba(16,185,129,0.8)" font-family="monospace">Mar</text>
+                <line x1="20" y1="52" x2="300" y2="52" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <text x="30" y="67" font-size="9" fill="rgba(255,255,255,0.5)" font-family="monospace">Product A</text>
+                <text x="120" y="67" font-size="9" fill="rgba(255,255,255,0.5)" font-family="monospace">12,400</text>
+                <text x="180" y="67" font-size="9" fill="rgba(255,255,255,0.5)" font-family="monospace">14,200</text>
+                <text x="240" y="67" font-size="9" fill="rgba(16,185,129,0.7)" font-family="monospace">16,800</text>
+                <line x1="20" y1="78" x2="300" y2="78" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                <text x="30" y="93" font-size="9" fill="rgba(255,255,255,0.5)" font-family="monospace">Product B</text>
+                <text x="120" y="93" font-size="9" fill="rgba(255,255,255,0.5)" font-family="monospace">8,900</text>
+                <text x="180" y="93" font-size="9" fill="rgba(255,255,255,0.5)" font-family="monospace">9,500</text>
+                <text x="240" y="93" font-size="9" fill="rgba(16,185,129,0.7)" font-family="monospace">11,200</text>
+                <rect x="20" y="110" width="280" height="60" rx="4" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.1)" stroke-width="1"/>
+                <rect x="30" y="125" width="40" height="30" rx="2" fill="rgba(16,185,129,0.2)"/>
+                <rect x="80" y="115" width="40" height="40" rx="2" fill="rgba(16,185,129,0.15)"/>
+                <rect x="130" y="120" width="40" height="35" rx="2" fill="rgba(16,185,129,0.25)"/>
+                <rect x="180" y="110" width="40" height="45" rx="2" fill="rgba(16,185,129,0.18)"/>
+                <rect x="230" y="105" width="40" height="50" rx="2" fill="rgba(16,185,129,0.3)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="ptag office">Excel</span><span class="ptag office">Charts</span><span class="ptag office">Dashboard</span></div>
+            <h3>Excel Sales Analytics Dashboard</h3>
+            <p>Interactive Excel dashboard with pivot tables, dynamic charts, and automated formulas for monthly sales tracking.</p>
+            <div class="proj-links">
+              <a href="#" class="proj-link">View Sample →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card glass reveal-up" style="--d:0.3s" data-cat="office">
+          <div class="proj-img proj-img-word">
+            <div class="proj-overlay">
+              <div class="proj-overlay-links">
+                <a href="#" class="proj-ol-btn" target="_blank">View Sample</a>
+              </div>
+            </div>
+            <div class="proj-img-inner">
+              <svg viewBox="0 0 320 200" fill="none">
+                <rect width="320" height="200" rx="8" fill="rgba(59,130,246,0.05)"/>
+                <rect x="40" y="20" width="240" height="160" rx="4" fill="rgba(255,255,255,0.03)" stroke="rgba(59,130,246,0.15)" stroke-width="1"/>
+                <rect x="60" y="35" width="200" height="14" rx="2" fill="rgba(59,130,246,0.15)"/>
+                <text x="160" y="47" text-anchor="middle" font-size="9" fill="rgba(59,130,246,0.8)" font-family="sans-serif" font-weight="700">PROFESSIONAL REPORT</text>
+                <rect x="60" y="60" width="200" height="1" fill="rgba(59,130,246,0.2)"/>
+                <rect x="60" y="70" width="180" height="6" rx="1" fill="rgba(255,255,255,0.06)"/>
+                <rect x="60" y="82" width="200" height="5" rx="1" fill="rgba(255,255,255,0.04)"/>
+                <rect x="60" y="93" width="160" height="5" rx="1" fill="rgba(255,255,255,0.04)"/>
+                <rect x="60" y="110" width="120" height="6" rx="1" fill="rgba(59,130,246,0.12)"/>
+                <rect x="60" y="122" width="200" height="4" rx="1" fill="rgba(255,255,255,0.04)"/>
+                <rect x="60" y="132" width="190" height="4" rx="1" fill="rgba(255,255,255,0.03)"/>
+                <rect x="60" y="142" width="170" height="4" rx="1" fill="rgba(255,255,255,0.03)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="ptag office">Word</span><span class="ptag office">Report</span><span class="ptag office">Formatting</span></div>
+            <h3>Professional Business Report</h3>
+            <p>Formatted Word document with professional layout, table of contents, headers, charts integration, and brand styling.</p>
+            <div class="proj-links">
+              <a href="#" class="proj-link">View Sample →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE ME ========== -->
+  <section class="why section">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">Why Me?</span>
+        <h2 class="sec-title">Why Choose <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card glass reveal-up" style="--d:0.05s">
+          <div class="why-icon">🎓</div>
+          <h3>Technical Expertise</h3>
+          <p>Deep hands-on knowledge across four distinct technical domains — not just surface-level familiarity.</p>
+        </div>
+        <div class="why-card glass reveal-up" style="--d:0.1s">
+          <div class="why-icon">🤝</div>
+          <h3>Reliable Service</h3>
+          <p>I meet deadlines, communicate clearly, and follow through on every commitment — no excuses.</p>
+        </div>
+        <div class="why-card glass reveal-up" style="--d:0.15s">
+          <div class="why-icon">🔍</div>
+          <h3>Attention to Detail</h3>
+          <p>Pixel-perfect design, clean code, and precise hardware work — I notice what others overlook.</p>
+        </div>
+        <div class="why-card glass reveal-up" style="--d:0.2s">
+          <div class="why-icon">⚡</div>
+          <h3>Fast Learning</h3>
+          <p>New tools, new technologies, new challenges — I adapt quickly and always deliver quality results.</p>
+        </div>
+        <div class="why-card glass reveal-up" style="--d:0.25s">
+          <div class="why-icon">💬</div>
+          <h3>Professional Communication</h3>
+          <p>Clear updates, honest timelines, and respectful dialogue throughout every project lifecycle.</p>
+        </div>
+        <div class="why-card glass reveal-up" style="--d:0.3s">
+          <div class="why-icon">❤️</div>
+          <h3>Client-Focused Approach</h3>
+          <p>Your goals drive my work. I tailor every solution to your specific needs and business context.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">My Journey</span>
+        <h2 class="sec-title">Work <span class="accent">Experience</span></h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal-left">
+          <div class="tl-dot">🌐</div>
+          <div class="tl-card glass">
+            <div class="tl-meta">
+              <span class="tl-date">2022 – Present</span>
+              <span class="tl-badge web">Web Development</span>
+            </div>
+            <h3>Front-End Web Developer</h3>
+            <p class="tl-company">Freelance — Karachi, Pakistan</p>
+            <p>Building responsive websites and landing pages for local businesses and freelance clients. Expertise in HTML5, CSS3, JavaScript, and responsive design using modern best practices.</p>
+            <ul class="tl-list">
+              <li>Delivered 20+ responsive websites for clients</li>
+              <li>Optimized sites for SEO and performance</li>
+              <li>Maintained codebases on GitHub</li>
             </ul>
-
-            <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-                <span class="theme-icon">🌙</span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text-wrapper">
-                <div class="hero-greeting fade-in">Hello, I'm</div>
-                <h1 class="hero-name fade-in-delayed-1">Fazal Ul Rehman Mangi</h1>
-                <p class="hero-title fade-in-delayed-2">Multi-Skilled IT & Technology Professional</p>
-                <p class="hero-description fade-in-delayed-3">
-                    I am a versatile technology professional with expertise in Full-Stack Development, UI/UX Design,
-                     Microsoft Word & Excel, Computer Networking, Solar System Technology, and Computer System Maintenance.
-                      I specialize in creating modern web applications, designing user-friendly interfaces, managing data efficiently, 
-                      configuring networks, installing and troubleshooting computer systems, and providing solar energy solutions. 
-                      My goal is to deliver innovative, reliable, and efficient technology services that help businesses and individuals achieve their objectives.
-                </p>
-                <div class="hero-cta fade-in-delayed-4">
-                    <a href="#contact" class="btn btn-primary" data-scroll>Get in Touch</a>
-                    <a href="#projects" class="btn btn-secondary" data-scroll>View Work</a>
-                </div>
-            </div>
-            
-            <div class="hero-image-wrapper fade-in-delayed-5">
-                <div class="profile-image">
-                    <div class="image-placeholder">
-                        <svg viewBox="0 0 200 200" xmlns="./Picture/ChatGPT Image Feb 13, 2026, 10_50_03 AM.png">
-                            <img src="./Picture/ChatGPT Image Feb 13, 2026, 10_50_03 AM.png" height="150%"  alt="">
-                            <circle cx="100" cy="80" r="40" fill="currentColor" opacity="0.3"/>
-                            <ellipse cx="100" cy="140" rx="50" ry="45" fill="currentColor" opacity="0.2"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="floating-card card-1">
-                    <div class="card-icon">💻</div>
-                    <div class="card-text">Web Dev</div>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-icon">🎨</div>
-                    <div class="card-text">Design</div>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-icon">⚡</div>
-                    <div class="card-text">Fast</div>
-                </div>
-            </div>
+          </div>
         </div>
 
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+        <div class="tl-item reveal-right">
+          <div class="tl-dot">🔧</div>
+          <div class="tl-card glass">
+            <div class="tl-meta">
+              <span class="tl-date">2021 – Present</span>
+              <span class="tl-badge hw">Hardware</span>
+            </div>
+            <h3>Computer Hardware Technician</h3>
+            <p class="tl-company">Self-Employed — Karachi, Pakistan</p>
+            <p>Diagnosing and repairing computer hardware, performing upgrades, installing software, and configuring networks for residential and small business clients.</p>
+            <ul class="tl-list">
+              <li>Repaired 100+ computers for local clients</li>
+              <li>Performed RAM, SSD &amp; GPU upgrades</li>
+              <li>Setup home and office networks</li>
+            </ul>
+          </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2 class="section-title">About Me</h2>
-                <div class="title-underline"></div>
+        <div class="tl-item reveal-left">
+          <div class="tl-dot">☀️</div>
+          <div class="tl-card glass">
+            <div class="tl-meta">
+              <span class="tl-date">2022 – Present</span>
+              <span class="tl-badge solar">Solar</span>
             </div>
-
-            <div class="about-grid">
-                <div class="about-text reveal">
-                    <p>
-                        I am a passionate and multi-skilled technology professional with expertise
-                         in Full-Stack Development, UI/UX Design, Microsoft Word & Excel,
-                          Computer Networking, Solar Technology, and Computer System 
-                          Maintenance.
-                    </p>
-                    <p>
-                        I enjoy building modern, responsive websites, creating intuitive user experiences,
-                         managing and analyzing data, configuring secure networks, troubleshooting computer
-                          systems, and implementing efficient solar energy solutions.
-                    </p>
-                    <p>
-                        With a strong focus on quality, innovation, and problem-solving,
-                         I am committed to delivering reliable and effective technology solutions that meet client and business needs.
-                    </p>
-                </div>
-
-                <div class="about-info reveal">
-                    <div class="info-item">
-                        <span class="info-label">Location</span>
-                        <span class="info-value">Mushraf Colony Near Hawksbay road, Karachi Pakistan</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Experience</span>
-                        <span class="info-value">3+ Years</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Focus</span>
-                        <span class="info-value">Problem Solving & Digital Innovation</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Email</span>
-                        <span class="info-value"><a href="mailto:fazalurrehmanmangi@gmail.com">fazalurrehmanmangi@gmail.com</a></span>
-                    </div>
-                </div>
-            </div>
+            <h3>Solar System Installer</h3>
+            <p class="tl-company">Freelance — Karachi, Pakistan</p>
+            <p>Installing and commissioning residential solar energy systems including panel mounting, inverter configuration, battery bank setup, and electrical safety compliance.</p>
+            <ul class="tl-list">
+              <li>Installed 15+ residential solar systems</li>
+              <li>Configured on-grid &amp; off-grid setups</li>
+              <li>Followed all electrical safety protocols</li>
+            </ul>
+          </div>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="title-underline"></div>
+        <div class="tl-item reveal-right">
+          <div class="tl-dot">📊</div>
+          <div class="tl-card glass">
+            <div class="tl-meta">
+              <span class="tl-date">2020 – Present</span>
+              <span class="tl-badge office">MS Office</span>
             </div>
-
-            <div class="skills-grid">
-                <!-- Frontend Skills -->
-                <div class="skill-card reveal">
-                    <h3 class="skill-category">Frontend Development</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">React & Vue</span>
-                            <span class="skill-level">95%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 95%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">HTML & CSS</span>
-                            <span class="skill-level">98%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 98%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">JavaScript</span>
-                            <span class="skill-level">75%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 75%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Tailwind CSS</span>
-                            <span class="skill-level">90%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 90%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Backend Skills -->
-                <div class="skill-card reveal">
-                    <h3 class="skill-category">Backend Development</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Node.js & Express</span>
-                            <span class="skill-level">88%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 88%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">MongoDB & SQL</span>
-                            <span class="skill-level">85%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 85%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">REST APIs</span>
-                            <span class="skill-level">94%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 94%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Python & Django</span>
-                            <span class="skill-level">80%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools & Others 1 -->
-                <div class="skill-card reveal">
-                    <h3 class="skill-category">Tools & Design</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Git & GitHub</span>
-                            <span class="skill-level">96%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 96%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Figma Design</span>
-                            <span class="skill-level">89%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 89%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Docker & AWS</span>
-                            <span class="skill-level">82%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 82%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">UI/UX Design</span>
-                            <span class="skill-level">87%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 87%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools & Others 2 -->
-                <div class="skill-card reveal">
-                    <h3 class="skill-category">Computer Hardware Maintenance</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Motherboard Installation</span>
-                            <span class="skill-level">100%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 100%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">CPU Installation & Upgrades</span>
-                            <span class="skill-level">89%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 89%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Printer Installation & Troubleshooting</span>
-                            <span class="skill-level">82%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 82%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Troubleshooting & Technical Support</span>
-                            <span class="skill-level">87%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 87%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools & Others 3 -->
-                <div class="skill-card reveal">
-                    <h3 class="skill-category">Solar System Installation</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Solar Panel Installation</span>
-                            <span class="skill-level">100%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 100%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Battery Installation</span>
-                            <span class="skill-level">93%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 93%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Solar Panel Cleaning & Inspection</span>
-                            <span class="skill-level">98%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 98%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Energy Load Calculation</span>
-                            <span class="skill-level">87%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 87%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools & Others 4 -->
-                <div class="skill-card reveal">
-                    <h3 class="skill-category">Microsoft Office Specialist</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Data Entry</span>
-                            <span class="skill-level">96%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 96%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Professional Formatting</span>
-                            <span class="skill-level">95%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 95%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">PDF Conversion & Export</span>
-                            <span class="skill-level">92%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 92%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Cover Letter Creation</span>
-                            <span class="skill-level">87%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 87%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h3>Microsoft Office Specialist</h3>
+            <p class="tl-company">Freelance — Karachi, Pakistan</p>
+            <p>Creating professional spreadsheets, formatted Word documents, data entry, and comprehensive reports for businesses and individual clients.</p>
+            <ul class="tl-list">
+              <li>Built 30+ Excel dashboards &amp; trackers</li>
+              <li>Formatted professional reports &amp; documents</li>
+              <li>High-accuracy data entry services</li>
+            </ul>
+          </div>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="title-underline"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">Client Reviews</span>
+        <h2 class="sec-title">What Clients <span class="accent">Say</span></h2>
+      </div>
+
+      <div class="testi-grid">
+
+        <div class="testi-card glass reveal-up" style="--d:0.05s">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Fazal built our business website from scratch — clean, fast, and exactly what we wanted. Very professional and responsive throughout the process."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AK</div>
+            <div>
+              <strong>Ahmed Khan</strong>
+              <span>Small Business Owner, Karachi</span>
             </div>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <div class="image-placeholder-project">
-                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                                <img src="./Picture/kids clothing store.PNG" height="140%" alt="">
-                                <rect width="400" height="250" fill="currentColor" opacity="0.1"/>
-                                <circle cx="100" cy="80" r="30" fill="currentColor" opacity="0.2"/>
-                                <rect x="150" y="60" width="200" height="40" fill="currentColor" opacity="0.15"/>
-                                <rect x="150" y="120" width="150" height="20" fill="currentColor" opacity="0.1"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Kids' Clothing Store </h3>
-                        <p class="project-description">
-                            Discover stylish, comfortable, and high-quality clothing for kids of all ages.
-                             Our collection features trendy outfits, everyday essentials, school wear, party dresses,
-                              and seasonal fashion designed to keep children looking great while feeling comfortable.
-                               We focus on premium fabrics, modern designs, and affordable prices to bring parents the
-                                best shopping experience for their little ones. 👕👗🧒✨
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">Stripe</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://jonrambok.github.io/Najiha/Home.html" class="project-link" target="_blank" rel="noopener">View Project</a>
-                            <a href="https://jonrambok.github.io/Najiha/Home.html" class="project-link" target="_blank" rel="noopener">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <div class="image-placeholder-project">
-                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                                <img src="./Picture/Task Management App.jfif" height="180%" alt="">
-                                <rect width="400" height="250" fill="currentColor" opacity="0.1"/>
-                                <circle cx="200" cy="125" r="50" fill="currentColor" opacity="0.2"/>
-                                <path d="M 150 175 Q 200 150 250 175" stroke="currentColor" stroke-width="3" fill="none" opacity="0.15"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Task Management App</h3>
-                        <p class="project-description">
-                            Collaborative task management application with real-time updates using WebSocket. 
-                            Includes team collaboration, file sharing, and smart notifications.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Vue 3</span>
-                            <span class="tag">WebSocket</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Firebase</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" target="_blank" rel="noopener">View Project</a>
-                            <a href="#" class="project-link" target="_blank" rel="noopener">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <div class="image-placeholder-project">
-                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                                <img src="./Picture/Computer Hardware.jfif" height="180%" alt="">
-                                <rect width="400" height="250" fill="currentColor" opacity="0.1"/>
-                                <rect x="50" y="50" width="70" height="70" fill="currentColor" opacity="0.2"/>
-                                <rect x="160" y="50" width="70" height="70" fill="currentColor" opacity="0.15"/>
-                                <rect x="270" y="50" width="70" height="70" fill="currentColor" opacity="0.1"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Computer Hardware Maintenance</h3>
-                        <p class="project-description">
-                            Computer Hardware Maintenance involves the installation, repair,
-                             upgrading, and troubleshooting of computer physical components to 
-                             ensure smooth and efficient system performance. It includes working
-                              with internal and external hardware parts such as the motherboard, 
-                              CPU, RAM, storage devices, power supply, and peripherals. The main goal
-                               is to keep computer systems running properly by identifying faults, replacing
-                                damaged components, performing regular cleaning, and optimizing hardware 
-                                performance for long-lasting and reliable operation.
-                        </p>
-                        <div class="project-tags">
-                            <!-- <span class="tag">Next.js</span>
-                            <span class="tag">Tailwind</span>
-                            <span class="tag">OpenAI API</span>
-                            <span class="tag">Vercel</span> -->
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" target="_blank" rel="noopener">View Project</a>
-                            <a href="#" class="project-link" target="_blank" rel="noopener">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <div class="image-placeholder-project">
-                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                                <img src="./Picture/Analytics Dashboard.jfif" height="180%" alt="">
-                                <rect width="400" height="250" fill="currentColor" opacity="0.1"/>
-                                <line x1="50" y1="80" x2="350" y2="80" stroke="currentColor" stroke-width="2" opacity="0.2"/>
-                                <line x1="50" y1="125" x2="350" y2="125" stroke="currentColor" stroke-width="2" opacity="0.15"/>
-                                <line x1="50" y1="170" x2="350" y2="170" stroke="currentColor" stroke-width="2" opacity="0.1"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Analytics Dashboard</h3>
-                        <p class="project-description">
-                            Real-time analytics dashboard for tracking user behavior and metrics. Features interactive 
-                            charts, custom reports, and data export functionality.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">D3.js</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Redis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" target="_blank" rel="noopener">View Project</a>
-                            <a href="#" class="project-link" target="_blank" rel="noopener">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2 class="section-title">Let's Work Together</h2>
-                <div class="title-underline"></div>
+        <div class="testi-card glass reveal-up" style="--d:0.1s">
+          <div class="testi-stars">★★★★★</div>
+          <p>"He fixed my computer the same day — upgraded the RAM and installed a new SSD. It runs like new now. Highly recommend for hardware work!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SR</div>
+            <div>
+              <strong>Sara Raza</strong>
+              <span>Home Office User, Karachi</span>
             </div>
-
-            <div class="contact-content">
-                <div class="contact-text reveal">
-                    <p>
-                        I'm always interested in hearing about new projects and opportunities. 
-                        Feel free to reach out if you'd like to discuss how I can help bring your ideas to life.
-                    </p>
-                </div>
-
-                <div class="contact-methods">
-                    <!-- Email -->
-                    <div class="contact-card reveal">
-                        <div class="contact-icon">✉️</div>
-                        <h3>Email</h3>
-                        <a href="mailto:fazalurrehmanmangi@gmail.com" class="contact-link">fazalurrehmanmangi@gmail.com</a>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="contact-card reveal">
-                        <div class="contact-icon">📱</div>
-                        <h3>Phone</h3>
-                        <a href="https://wa.me/923012292471" target="_blank" rel="noopener" class="contact-link">+92 301 2292471</a>
-                    </div>
-
-                    <!-- Location -->
-                    <div class="contact-card reveal">
-                        <div class="contact-icon">📍</div>
-                        <h3>Location</h3>
-                        <p class="contact-text-item">Mushraf colony near Hawksbay road Karachi, Pakistan</p>
-                    </div>
-                </div>
-
-                <div class="social-links reveal">
-                    <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter">
-                        <span>𝕏</span>
-                    </a>
-                    <a href="https://github.com" target="_blank" rel="noopener" class="social-link" title="GitHub">
-                        <span>⚙️</span>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
-                        <span>💼</span>
-                    </a>
-                    <a href="https://www.facebook.com/share/1EEJEyQXES/" target="_blank" rel="noopener" class="social-link" title="Instagram">
-                        <span style="font-weight: 700; font-size: 30px;">f</span>
-                    </a>
-                </div>
-
-                <form class="contact-form reveal" id="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
-                </form>
-            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Fazal. All rights reserved.</p>
-                <p>We create modern, responsive & user-friendly websites.
-                    Built with passion for<span class="heart">♥</span> technology & innovation.</p>
+        <div class="testi-card glass reveal-up" style="--d:0.15s">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Got a 3kW solar system installed by Fazal. Everything was done safely, neatly, and on time. My electricity bills have dropped by 80%!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MH</div>
+            <div>
+              <strong>Muhammad Haris</strong>
+              <span>Homeowner, Karachi</span>
             </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="testi-card glass reveal-up" style="--d:0.2s">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Fazal created a comprehensive Excel dashboard for our sales team. It automated what used to take hours every week. Excellent Excel skills!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">FN</div>
+            <div>
+              <strong>Fatima Noor</strong>
+              <span>Office Manager, Karachi</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">Let's Talk</span>
+        <h2 class="sec-title">Get In <span class="accent">Touch</span></h2>
+        <p class="sec-sub">Available for freelance projects, part-time work, and local service calls across Karachi.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-left">
+          <div class="ci-card glass">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:fazalurrehmanmangi@gmail.com">fazalurrehmanmangi@gmail.com</a>
+            </div>
+          </div>
+          <div class="ci-card glass">
+            <div class="ci-icon">📱</div>
+            <div>
+              <h4>WhatsApp / Phone</h4>
+              <a href="https://wa.me/923012292471" target="_blank">+92 301 2292471</a>
+            </div>
+          </div>
+          <div class="ci-card glass">
+            <div class="ci-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Mushraf Colony, Near Hawksbay Road, Karachi, Pakistan</p>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="https://wa.me/923012292471" class="soc-btn whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.28 7.051L.785 23.216a.5.5 0 00.614.614l4.165-1.495A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.003-1.366l-.36-.213-3.715 1.334 1.334-3.715-.213-.36A9.818 9.818 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182S21.818 6.573 21.818 12 17.427 21.818 12 21.818z"/></svg>
+            </a>
+            <a href="mailto:fazalurrehmanmangi@gmail.com" class="soc-btn email" title="Email">✉️</a>
+            <a href="https://github.com" class="soc-btn github" target="_blank" rel="noopener" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" class="soc-btn linkedin" target="_blank" rel="noopener" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/share/1EEJEyQXES/" class="soc-btn facebook" target="_blank" rel="noopener" title="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass reveal-right" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="name" placeholder="Fazal Mangi" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fservice">Service Needed</label>
+            <select id="fservice" name="service">
+              <option value="">Select a service...</option>
+              <option>Web Development</option>
+              <option>Landing Page</option>
+              <option>Portfolio Website</option>
+              <option>Computer Repair / Hardware</option>
+              <option>Solar System Installation</option>
+              <option>Microsoft Excel / Word</option>
+              <option>Data Entry</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" name="message" rows="5" placeholder="Tell me about your project or service request..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-mark">◆</span>
+          <span class="brand-name">Fazal</span>
+        </div>
+        <p>Front-End Developer &amp; Technical Specialist based in Karachi, Pakistan.<br/>Delivering quality web, hardware, solar &amp; office solutions.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/923012292471" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="mailto:fazalurrehmanmangi@gmail.com">Email</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.facebook.com/share/1EEJEyQXES/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fazal Ul Rehman Mangi. All rights reserved.</p>
+        <p>Built with <span style="color:#00d4aa">♥</span> and clean code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-top" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>
