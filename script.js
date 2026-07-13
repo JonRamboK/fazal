@@ -33,6 +33,7 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 30);
   toggleBackTop();
   updateActiveNav();
+  updateProgressBar();
 });
 
 hamburger.addEventListener('click', () => {
@@ -276,6 +277,32 @@ backTop.addEventListener('click', () => {
 });
 
 // ================================================================
+// SCROLL PROGRESS BAR
+// ================================================================
+const progressBar = document.getElementById('progressBar');
+
+function updateProgressBar() {
+  if (!progressBar) return;
+  const docH = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = docH > 0 ? (window.scrollY / docH) * 100 : 0;
+  progressBar.style.width = pct + '%';
+}
+
+// ================================================================
+// SPOTLIGHT CURSOR GLOW ON CARDS
+// ================================================================
+function initSpotlightCards() {
+  const spotlightSelector = '.svc-card, .why-card, .skill-item, .testi-card, .tl-card, .about-card, .contact-form';
+  document.querySelectorAll(spotlightSelector).forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
+      card.style.setProperty('--my', (e.clientY - rect.top) + 'px');
+    });
+  });
+}
+
+// ================================================================
 // RESIZE HANDLER
 // ================================================================
 function debounce(fn, wait) {
@@ -303,6 +330,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Init skill bars to 0
   initFirstTabSkillBars();
+
+  // Spotlight cursor glow + initial progress bar state
+  initSpotlightCards();
+  updateProgressBar();
 
   console.log('%c◆ Fazal Portfolio Loaded ', 'font-size:14px;color:#00d4aa;font-weight:700;background:#080d14;padding:4px 8px;border-radius:4px;');
 });
