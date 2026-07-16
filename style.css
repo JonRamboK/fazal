@@ -1478,7 +1478,7 @@ body { counter-reset: sect; }
   .container { padding: 0 1.25rem; }
 
   .nav-links {
-    position: fixed; top: 68px; left: 0; right: 0;
+    position: fixed; top: 45px; left: 0; right: 0;
     background: rgba(250,248,244,0.98);
     backdrop-filter: blur(20px);
     flex-direction: column; gap: 0; padding: 1rem 0;
